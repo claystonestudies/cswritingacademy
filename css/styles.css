@@ -307,6 +307,59 @@ header {
     margin-bottom: 0;
 }
 
+.testimonials-preview {
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    border-top: 1px solid var(--line);
+}
+
+.testimonials-section {
+    margin: 34px 0;
+}
+
+.testimonial-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 24px;
+}
+
+.testimonial-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 24px;
+}
+
+.testimonial-card blockquote {
+    border-left: 4px solid var(--beige-dark);
+    color: var(--ink);
+    margin: 0 0 18px;
+    padding-left: 18px;
+}
+
+.testimonial-card blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+.compact-testimonials .testimonial-card blockquote {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.12rem;
+    line-height: 1.55;
+}
+
+.testimonial-card figcaption {
+    color: var(--beige-dark);
+    font-weight: bold;
+}
+
+.text-link {
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
 .service-list li {
     background: var(--paper);
     border: 1px solid var(--line);
