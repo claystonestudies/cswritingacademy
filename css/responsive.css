@@ -61,4 +61,10 @@
     .two-column {
         grid-template-columns: 1fr;
     }
+
+    .tutor-portrait {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
 }

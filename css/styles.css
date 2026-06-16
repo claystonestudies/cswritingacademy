@@ -241,6 +241,18 @@ header {
     align-items: start;
 }
 
+.tutor-portrait {
+    float: right;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center top;
+    margin: 2px 0 16px 24px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(47, 42, 35, 0.12);
+}
+
 .sidebar-box {
     background: var(--paper);
     border: 1px solid var(--line);
