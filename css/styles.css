@@ -64,25 +64,16 @@ header {
     align-items: center;
 }
 
-.logo-mark {
-    width: 44px;
-    height: 44px;
-    border: 2px solid var(--cream-deep);
-    border-radius: 50%;
-    color: var(--cream-deep);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Georgia, 'Times New Roman', serif;
-    font-weight: bold;
-    margin-right: 12px;
-    letter-spacing: 1px;
-}
-
 .brand-name {
     font-size: 1.65rem;
     font-weight: bold;
     color: var(--white);
+    text-decoration: none;
+}
+
+.brand-name:hover {
+    color: var(--cream-deep);
+    text-decoration: none;
 }
 
 .nav-links {
