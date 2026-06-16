@@ -1,6 +1,6 @@
-# Davis Writing Academy
+# Claystone Studies Writing Academy
 
-Static HTML/CSS website draft for Davis Writing Academy.
+Static HTML/CSS website draft for Claystone Studies Writing Academy.
 
 ## Files
 
@@ -15,4 +15,4 @@ Static HTML/CSS website draft for Davis Writing Academy.
 
 ## Notes
 
-The contact email is currently written as `robert@daviswritingacademy.com`. Set up that email address before publishing, or replace it in `contact.html` with the preferred contact address.
+The contact email is currently written as `robert@claystonestudies.com`.
