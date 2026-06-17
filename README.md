@@ -6,7 +6,7 @@ Static HTML/CSS website draft for Claystone Studies Writing Academy.
 
 - `index.html`
 - `about.html`
-- `services.html`
+- `tutoring.html`
 - `contact.html`
 - `css/styles.css`
 - `css/responsive.css`
