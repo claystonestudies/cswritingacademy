@@ -172,6 +172,13 @@ header {
     max-width: 980px;
 }
 
+.hero-logo {
+    display: block;
+    height: 166px;
+    margin: 0 auto 22px;
+    width: auto;
+}
+
 .hero-subtext {
     color: #2f435c;
     font-size: 1.16rem;
@@ -397,6 +404,7 @@ header {
 }
 
 .testimonial-card {
+    background: rgba(255, 255, 255, 0.8);
     padding: 24px;
 }
 
@@ -415,6 +423,7 @@ header {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 1.12rem;
     line-height: 1.55;
+    margin-bottom: 0;
 }
 
 .testimonial-card figcaption {

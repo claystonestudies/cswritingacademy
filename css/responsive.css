@@ -72,6 +72,11 @@
         font-size: 2.45rem;
     }
 
+    .hero-logo {
+        height: 146px;
+        margin-bottom: 18px;
+    }
+
     .hero-subtext {
         font-size: 1.08rem;
     }
@@ -128,6 +133,10 @@
 
     .hero h1 {
         font-size: 2.1rem;
+    }
+
+    .hero-logo {
+        height: 131px;
     }
 
     .section,
