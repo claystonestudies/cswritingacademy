@@ -109,6 +109,7 @@
         max-width: 260px;
     }
 
+    .academy-logo,
     .tutor-portrait {
         display: block;
         float: none;

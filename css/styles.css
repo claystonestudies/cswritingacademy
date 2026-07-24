@@ -319,6 +319,7 @@ header {
     grid-template-columns: 1.2fr 0.8fr;
 }
 
+.academy-logo,
 .tutor-portrait {
     border: 1px solid var(--line);
     border-radius: 6px;
@@ -326,9 +327,18 @@ header {
     float: right;
     height: 150px;
     margin: 2px 0 16px 24px;
+    width: 150px;
+}
+
+.academy-logo {
+    background: var(--white);
+    object-fit: contain;
+    padding: 10px;
+}
+
+.tutor-portrait {
     object-fit: cover;
     object-position: center top;
-    width: 150px;
 }
 
 .sidebar-box {
