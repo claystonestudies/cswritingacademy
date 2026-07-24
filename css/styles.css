@@ -519,7 +519,7 @@ header {
 }
 
 .book-page {
-    padding-bottom: 0;
+    padding-bottom: 64px;
 }
 
 .book-hero {
