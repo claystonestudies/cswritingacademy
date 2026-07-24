@@ -65,7 +65,7 @@
     }
 
     .hero {
-        padding: 76px 18px 72px;
+        padding: 58px 18px 54px;
     }
 
     .hero h1 {
@@ -73,8 +73,8 @@
     }
 
     .hero-logo {
-        height: 146px;
-        margin-bottom: 18px;
+        height: 118px;
+        margin-bottom: 16px;
     }
 
     .hero-subtext {
@@ -102,15 +102,21 @@
         grid-column: auto;
     }
 
-    .tutoring-topics .plain-list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .home-thesis-grid .feature {
+        gap: 12px;
+        grid-template-columns: 1fr;
     }
 
-    .book-hero,
+    .book-showcase,
     .tutoring-options,
     .testimonial-grid,
     .two-column {
         grid-template-columns: 1fr;
+    }
+
+    .book-showcase {
+        gap: 32px;
+        padding-top: 4px;
     }
 
     .book-theme-grid {
@@ -149,7 +155,7 @@
     }
 
     .hero-logo {
-        height: 131px;
+        height: 104px;
     }
 
     .section,
@@ -157,12 +163,28 @@
         padding: 42px 0;
     }
 
+    .home-methods-section {
+        padding-bottom: 26px;
+    }
+
+    .home-thesis-section {
+        padding-top: 26px;
+    }
+
     .home-thesis-copy {
         padding: 22px 20px 4px;
     }
 
-    .tutoring-topics .plain-list {
-        grid-template-columns: 1fr;
+    .book-showcase {
+        padding-top: 0;
+    }
+
+    .book-cover-frame img {
+        max-width: 230px;
+    }
+
+    .book-intro h2 {
+        font-size: 1.7rem;
     }
 
     .feature,
@@ -178,6 +200,10 @@
     .callout {
         border-radius: 6px;
         padding: 18px;
+    }
+
+    .option-card {
+        min-height: 0;
     }
 
     .book-theme-grid {

@@ -139,7 +139,7 @@ header {
     font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 0.08em;
-    padding: 7px 12px;
+    padding: 7px 10px;
     text-decoration: none;
     text-transform: uppercase;
     transition: background-color 0.2s ease, color 0.2s ease;
@@ -162,7 +162,7 @@ header {
         var(--header-blue);
     border-bottom: 1px solid #a7bfd7;
     color: var(--ink);
-    padding: 112px 20px 104px;
+    padding: 78px 20px 72px;
     text-align: center;
 }
 
@@ -174,8 +174,8 @@ header {
 
 .hero-logo {
     display: block;
-    height: 166px;
-    margin: 0 auto 22px;
+    height: 132px;
+    margin: 0 auto 18px;
     width: auto;
 }
 
@@ -350,21 +350,6 @@ header {
     max-width: 980px;
 }
 
-.tutoring-topics {
-    margin: 0 0 26px;
-}
-
-.tutoring-topics .plain-list {
-    display: grid;
-    gap: 8px 28px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin-bottom: 0;
-}
-
-.tutoring-topics .plain-list li {
-    margin-bottom: 0;
-}
-
 .home-prose {
     margin: 0 auto;
     max-width: 980px;
@@ -372,6 +357,15 @@ header {
 
 .home-prose .intro-text {
     max-width: none;
+}
+
+.home-approach-link {
+    margin-left: 0;
+    margin-top: 6px;
+}
+
+.approach-principles-section .home-principles-grid {
+    margin-top: 0;
 }
 
 .home-principles-grid {
@@ -394,6 +388,33 @@ header {
     padding: 28px 32px 10px;
 }
 
+.home-methods-section {
+    padding-bottom: 30px;
+}
+
+.home-thesis-section {
+    padding-top: 30px;
+}
+
+.home-thesis-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+}
+
+.home-thesis-grid .feature {
+    align-items: start;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: minmax(220px, 0.43fr) minmax(0, 1fr);
+    padding: 28px 30px;
+}
+
+.home-thesis-grid .feature h2,
+.home-thesis-grid .feature p {
+    margin-bottom: 0;
+}
+
 .service-list {
     list-style: none;
     margin-top: 18px;
@@ -401,31 +422,51 @@ header {
 
 .tutoring-options {
     display: grid;
-    gap: 18px;
+    gap: 16px;
     grid-template-columns: repeat(3, 1fr);
-    margin: 28px 0 24px;
+    margin: 32px 0 50px;
+}
+
+.tutoring-intro {
+    line-height: 1.8;
+    max-width: 1000px;
 }
 
 .option-card {
+    background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(234, 242, 251, 0.7)),
+        var(--surface);
+    border-top: 3px solid rgba(47, 95, 150, 0.64);
+    box-shadow:
+        0 18px 38px rgba(23, 34, 54, 0.09),
+        inset 0 1px 0 rgba(255, 255, 255, 0.96);
     display: flex;
     flex-direction: column;
-    padding: 22px;
+    min-height: 250px;
+    padding: 24px;
 }
 
 .option-card h3 {
     color: var(--accent-dark);
+    font-size: 1.32rem;
+    line-height: 1.3;
+    margin-bottom: 14px;
 }
 
 .option-card p {
     color: var(--muted-ink);
-    margin-bottom: 20px;
+    font-size: 0.96rem;
+    line-height: 1.65;
+    margin-bottom: 22px;
 }
 
 .option-card .btn-primary,
 .option-card .btn-secondary {
-    align-self: flex-start;
+    align-self: stretch;
     margin-left: 0;
     margin-top: auto;
+    text-align: center;
+    width: 100%;
 }
 
 .expectation-notes {
@@ -522,11 +563,20 @@ header {
     padding-bottom: 64px;
 }
 
-.book-hero {
+.book-showcase {
     align-items: center;
     display: grid;
-    gap: 42px;
-    grid-template-columns: 0.72fr 1.28fr;
+    gap: clamp(42px, 6vw, 78px);
+    grid-template-columns: minmax(0, 1.35fr) minmax(240px, 0.65fr);
+    max-width: 1080px;
+    padding-top: 10px;
+}
+
+.book-purchase {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .book-cover-frame {
@@ -541,30 +591,35 @@ header {
     display: block;
     height: auto;
     margin: 0 auto;
-    max-width: 310px;
+    max-width: 280px;
     width: 100%;
+}
+
+.book-intro {
+    max-width: 690px;
+    padding: 4px 0;
 }
 
 .book-intro h2 {
     font-size: 2.15rem;
     margin-bottom: 18px;
+    max-width: 650px;
+    text-align: left;
 }
 
-.eyebrow {
-    color: var(--accent-dark);
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+.book-intro p:last-child {
+    margin-bottom: 0;
 }
 
 .book-actions {
-    margin-top: 10px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
 }
 
 .book-actions .btn-primary:first-child {
-    margin-left: 0;
+    margin: 0;
+    min-width: 150px;
 }
 
 .book-section {
@@ -615,6 +670,18 @@ header {
     background: var(--surface);
     max-width: 760px;
     padding: 26px;
+}
+
+.contact-content {
+    max-width: 840px;
+}
+
+.contact-content > main > p {
+    max-width: 760px;
+}
+
+.contact-content .contact-card {
+    margin-top: 30px;
 }
 
 footer {
