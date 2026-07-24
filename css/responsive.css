@@ -82,7 +82,7 @@
     }
 
     .page-header {
-        padding: 58px 18px;
+        padding: 40px 18px;
     }
 
     .page-header h1 {
@@ -92,6 +92,18 @@
     .features,
     .cards {
         flex-direction: column;
+    }
+
+    .home-principles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-principles-grid .feature:nth-child(3) {
+        grid-column: auto;
+    }
+
+    .tutoring-topics .plain-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .book-hero,
@@ -143,6 +155,14 @@
     .section,
     .page-content {
         padding: 42px 0;
+    }
+
+    .home-thesis-copy {
+        padding: 22px 20px 4px;
+    }
+
+    .tutoring-topics .plain-list {
+        grid-template-columns: 1fr;
     }
 
     .feature,

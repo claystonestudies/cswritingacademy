@@ -296,7 +296,7 @@ header {
 .page-header {
     background: linear-gradient(120deg, var(--header-blue-deep), #d7e7f5 52%, var(--header-blue));
     border-bottom: 1px solid #a7bfd7;
-    padding: 68px 20px;
+    padding: 48px 20px;
     text-align: center;
 }
 
@@ -344,6 +344,54 @@ header {
 .sidebar-box {
     background: #eef5fc;
     padding: 24px;
+}
+
+.about-content {
+    max-width: 980px;
+}
+
+.tutoring-topics {
+    margin: 0 0 26px;
+}
+
+.tutoring-topics .plain-list {
+    display: grid;
+    gap: 8px 28px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 0;
+}
+
+.tutoring-topics .plain-list li {
+    margin-bottom: 0;
+}
+
+.home-prose {
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+.home-prose .intro-text {
+    max-width: none;
+}
+
+.home-principles-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+}
+
+.home-principles-grid .feature:nth-child(3) {
+    grid-column: 1 / -1;
+}
+
+.home-principles-grid .feature:nth-child(3) p {
+    max-width: 920px;
+}
+
+.home-thesis-copy {
+    background: rgba(255, 255, 255, 0.5);
+    border-left: 4px solid var(--accent);
+    border-radius: 6px;
+    padding: 28px 32px 10px;
 }
 
 .service-list {
