@@ -544,6 +544,7 @@ header {
         linear-gradient(180deg, #f8fbfe, #f2f7fb);
     border-bottom: 1px solid rgba(164, 187, 210, 0.62);
     padding: 58px 0 64px;
+    scroll-margin-top: 86px;
 }
 
 .writing-video-section h2 {
@@ -574,7 +575,7 @@ header {
         0 8px 20px rgba(20, 45, 72, 0.1),
         inset 0 1px 0 rgba(255, 255, 255, 0.16);
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 840px;
     overflow: hidden;
     padding: 7px;
     position: relative;
@@ -757,6 +758,65 @@ header {
     --theme-shadow: rgba(44, 84, 86, 0.1);
     --theme-surface: linear-gradient(135deg, #ebf3f3, #d3e5e5);
     --theme-text: #2e5759;
+}
+
+.tutoring-video-invitation {
+    align-items: center;
+    background:
+        linear-gradient(135deg, rgba(238, 245, 251, 0.94), rgba(224, 235, 245, 0.82));
+    border: 1px solid rgba(139, 166, 192, 0.66);
+    border-radius: 11px;
+    box-shadow:
+        0 9px 22px rgba(35, 65, 94, 0.07),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    color: #29445f;
+    display: flex;
+    font-size: 0.96rem;
+    gap: 13px;
+    line-height: 1.55;
+    margin-top: 5px;
+    padding: 15px 17px;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.tutoring-video-invitation:hover {
+    background:
+        linear-gradient(135deg, rgba(232, 241, 249, 0.98), rgba(213, 228, 241, 0.9));
+    border-color: rgba(78, 119, 157, 0.72);
+    box-shadow:
+        0 12px 26px rgba(35, 65, 94, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.94);
+    color: #1f3e5c;
+    transform: translateY(-1px);
+}
+
+.tutoring-video-invitation:focus-visible {
+    outline: 3px solid rgba(58, 105, 148, 0.28);
+    outline-offset: 3px;
+}
+
+.tutoring-video-invitation-icon {
+    align-items: center;
+    background: #355c7d;
+    border: 1px solid rgba(29, 68, 102, 0.82);
+    border-radius: 50%;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.24);
+    color: #f8fbfe;
+    display: inline-flex;
+    flex: 0 0 30px;
+    font-size: 0.68rem;
+    height: 30px;
+    justify-content: center;
+    padding-left: 2px;
+    width: 30px;
+}
+
+.tutoring-video-invitation strong {
+    color: #173f66;
+    text-decoration: underline;
+    text-decoration-color: rgba(23, 63, 102, 0.4);
+    text-underline-offset: 3px;
 }
 
 .tutoring-booking-panel {

@@ -317,6 +317,18 @@
         font-size: 1.08rem;
     }
 
+    .tutoring-video-invitation {
+        align-items: flex-start;
+        font-size: 0.94rem;
+        padding: 14px 15px;
+    }
+
+    .tutoring-video-invitation-icon {
+        flex-basis: 28px;
+        height: 28px;
+        width: 28px;
+    }
+
     .tutoring-booking-panel {
         border-radius: 14px;
         margin: 34px 0 44px;
