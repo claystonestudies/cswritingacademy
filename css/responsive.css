@@ -214,6 +214,35 @@
         font-size: 1.8rem;
     }
 
+    .contact-intro {
+        padding: 24px 20px;
+    }
+
+    .contact-intro p {
+        font-size: 1.08rem;
+    }
+
+    .contact-content .contact-card {
+        border-radius: 12px;
+        margin-top: 32px;
+        padding: 30px 18px 32px;
+    }
+
+    .contact-email-link {
+        font-size: 0.93rem;
+        padding-left: 18px;
+        padding-right: 18px;
+        width: 100%;
+    }
+
+    .contact-email-actions {
+        flex-direction: column;
+    }
+
+    .contact-copy-button {
+        width: 100%;
+    }
+
     .btn-primary,
     .btn-secondary {
         max-width: 100%;
