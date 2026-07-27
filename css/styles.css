@@ -386,6 +386,136 @@ header {
     max-width: 980px;
 }
 
+.about-writing-links {
+    clear: both;
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 28px;
+}
+
+.about-writing-link {
+    --channel-accent: #365f82;
+    --channel-border: rgba(89, 124, 154, 0.48);
+    --channel-icon-background: rgba(221, 234, 245, 0.9);
+    --channel-surface: linear-gradient(145deg, rgba(250, 253, 255, 0.98), rgba(232, 241, 248, 0.9));
+    align-items: center;
+    background: var(--channel-surface);
+    border: 1px solid var(--channel-border);
+    border-radius: 11px;
+    box-shadow:
+        0 9px 20px rgba(23, 34, 54, 0.06),
+        inset 0 1px 0 rgba(255, 255, 255, 0.94);
+    color: var(--ink);
+    display: grid;
+    gap: 11px;
+    grid-template-columns: auto 1fr auto;
+    min-height: 92px;
+    overflow: hidden;
+    padding: 12px 16px;
+    position: relative;
+    text-decoration: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.about-writing-link::before {
+    background: linear-gradient(90deg, transparent, var(--channel-accent), transparent);
+    content: "";
+    height: 2px;
+    left: 12%;
+    opacity: 0.7;
+    position: absolute;
+    right: 12%;
+    top: 0;
+}
+
+.about-writing-link--substack {
+    --channel-accent: #7a6135;
+    --channel-border: rgba(150, 124, 76, 0.46);
+    --channel-icon-background: rgba(239, 231, 212, 0.9);
+    --channel-surface: linear-gradient(145deg, rgba(255, 254, 250, 0.98), rgba(244, 238, 224, 0.9));
+}
+
+.about-writing-link:hover {
+    border-color: var(--channel-accent);
+    box-shadow:
+        0 12px 25px rgba(23, 34, 54, 0.09),
+        inset 0 1px 0 rgba(255, 255, 255, 0.96);
+    color: var(--ink);
+    transform: translateY(-2px);
+}
+
+.about-writing-link:focus-visible {
+    outline: 3px solid color-mix(in srgb, var(--channel-accent) 25%, transparent);
+    outline-offset: 3px;
+}
+
+.about-writing-link-icon {
+    align-items: center;
+    background: var(--channel-icon-background);
+    border: 1px solid var(--channel-border);
+    border-radius: 50%;
+    color: var(--channel-accent);
+    display: inline-flex;
+    height: 34px;
+    justify-content: center;
+    width: 34px;
+}
+
+.about-writing-link-icon svg {
+    fill: currentColor;
+    height: 17px;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.5;
+    width: 17px;
+}
+
+.about-writing-link--youtube .about-writing-link-icon svg {
+    stroke: none;
+}
+
+.about-writing-link--substack .about-writing-link-icon svg {
+    fill: none;
+}
+
+.about-writing-link-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about-writing-link-label {
+    color: var(--channel-accent);
+    font-size: 0.67rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.about-writing-link-text {
+    color: #26384d;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.94rem;
+    line-height: 1.48;
+}
+
+.about-writing-link-arrow {
+    align-self: start;
+    color: var(--channel-accent);
+    font-size: 1rem;
+    line-height: 1;
+    opacity: 0.74;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.about-writing-link:hover .about-writing-link-arrow {
+    opacity: 1;
+    transform: translate(2px, -2px);
+}
+
 .home-understanding-section {
     background:
         radial-gradient(circle at 50% 0, rgba(197, 219, 240, 0.34), transparent 46%),

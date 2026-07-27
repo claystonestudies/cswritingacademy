@@ -154,6 +154,10 @@
         float: none;
         margin: 0 auto 20px;
     }
+
+    .about-writing-links {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 640px) {
@@ -300,6 +304,31 @@
     .callout {
         border-radius: 6px;
         padding: 18px;
+    }
+
+    .about-writing-links {
+        gap: 12px;
+        margin-top: 24px;
+    }
+
+    .about-writing-link {
+        gap: 11px;
+        min-height: 0;
+        padding: 12px 14px;
+    }
+
+    .about-writing-link-icon {
+        height: 34px;
+        width: 34px;
+    }
+
+    .about-writing-link-icon svg {
+        height: 17px;
+        width: 17px;
+    }
+
+    .about-writing-link-text {
+        font-size: 0.93rem;
     }
 
     .option-card {
