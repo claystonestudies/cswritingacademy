@@ -364,6 +364,29 @@
         padding: 28px 18px 22px;
     }
 
+    .tutoring-booking-area {
+        gap: 14px;
+        margin: 28px 0 40px;
+    }
+
+    .tutoring-booking-intro {
+        padding: 17px 18px;
+    }
+
+    .tutoring-booking-intro p {
+        font-size: 0.98rem;
+        line-height: 1.6;
+    }
+
+    .tutoring-booking-area .tutoring-booking-panel {
+        margin: 0;
+        padding: 24px 16px 18px;
+    }
+
+    .tutoring-booking-area .option-card {
+        padding: 21px 18px 18px;
+    }
+
     .tutoring-booking-panel > h2 {
         font-size: 1.7rem;
     }
@@ -373,7 +396,7 @@
     }
 
     .tutoring-request-content {
-        padding: 38px 0 54px;
+        padding: 26px 0 54px;
     }
 
     .tutoring-request-card {

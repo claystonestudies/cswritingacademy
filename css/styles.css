@@ -758,8 +758,12 @@ header {
 .tutoring-options {
     display: grid;
     gap: 18px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     margin: 26px 0 0;
+}
+
+.tutoring-booking-area .tutoring-options {
+    margin-top: 20px;
 }
 
 .tutoring-intro {
@@ -967,6 +971,59 @@ header {
     position: relative;
 }
 
+.tutoring-booking-area {
+    display: grid;
+    gap: 18px;
+    margin: 36px 0 52px;
+}
+
+.tutoring-booking-intro {
+    background:
+        radial-gradient(circle at 50% 0, rgba(215, 230, 242, 0.58), transparent 64%),
+        rgba(251, 253, 255, 0.9);
+    border: 1px solid rgba(118, 150, 178, 0.58);
+    border-radius: 14px;
+    box-shadow: 0 14px 34px rgba(24, 51, 79, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.96);
+    padding: 14px 26px;
+    position: relative;
+}
+
+.tutoring-booking-intro::before {
+    background: linear-gradient(90deg, transparent, rgba(65, 107, 147, 0.72), transparent);
+    content: "";
+    height: 2px;
+    left: 18%;
+    position: absolute;
+    right: 18%;
+    top: 0;
+}
+
+.tutoring-booking-intro p {
+    color: #24455f;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.65;
+    margin: 0 auto;
+    max-width: 850px;
+    text-align: center;
+}
+
+.tutoring-booking-area .tutoring-booking-panel {
+    margin: 0;
+    padding: 22px 26px 20px;
+}
+
+.tutoring-booking-panel--request {
+    background:
+        radial-gradient(circle at 50% -10%, rgba(226, 216, 183, 0.42), transparent 50%),
+        linear-gradient(145deg, rgba(236, 241, 244, 0.96), rgba(248, 249, 247, 0.9));
+    border-color: rgba(143, 129, 88, 0.6);
+}
+
+.tutoring-booking-panel--request::before {
+    background: linear-gradient(90deg, transparent, #806b35, transparent);
+}
+
 .tutoring-booking-panel::before {
     background: linear-gradient(90deg, transparent, #416b93, transparent);
     content: "";
@@ -983,6 +1040,10 @@ header {
     font-size: 2rem;
     margin: 0;
     text-align: center;
+}
+
+.tutoring-booking-area .tutoring-booking-panel > h2 {
+    font-size: 1.78rem;
 }
 
 .tutoring-booking-panel > h2::after {
@@ -1021,6 +1082,27 @@ header {
     position: relative;
     text-align: center;
     transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.tutoring-booking-area .option-card {
+    min-height: 0;
+    padding: 17px 20px 15px;
+}
+
+.tutoring-booking-area .option-card h3 {
+    font-size: 1.22rem;
+    margin-bottom: 12px;
+}
+
+.tutoring-booking-area .option-booking-note {
+    font-size: 0.86rem;
+    line-height: 1.45;
+    margin-bottom: 11px;
+}
+
+.tutoring-booking-area .option-portal-link {
+    min-height: 44px;
+    padding: 8px 15px;
 }
 
 .option-card::before {
@@ -1078,6 +1160,32 @@ header {
     z-index: 1;
 }
 
+.option-price--discounted {
+    align-items: center;
+    display: flex;
+    gap: 9px;
+    justify-content: center;
+}
+
+.option-discount {
+    align-items: center;
+    background: rgba(231, 239, 246, 0.82);
+    border: 1px solid rgba(67, 104, 136, 0.38);
+    border-radius: 999px;
+    color: #365a78;
+    display: inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.64rem;
+    font-weight: 700;
+    height: 22px;
+    justify-content: center;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    padding: 0 7px;
+    text-transform: uppercase;
+    transform: translateY(1px);
+}
+
 .option-booking-note,
 .option-request-note {
     color: #36506a;
@@ -1107,18 +1215,23 @@ header {
     --portal-text: #f7f9fb;
 }
 
-.option-card--weekly {
+.tutoring-request-action {
     --portal-border: rgba(89, 69, 25, 0.9);
-    --portal-card-border: rgba(125, 98, 38, 0.7);
     --portal-end: #92783a;
     --portal-glow: rgba(112, 87, 31, 0.2);
     --portal-start: #665226;
     --portal-text: #fffdf5;
+    margin: 16px auto 0;
+    max-width: 560px;
 }
 
-.option-card--weekly .option-request-note {
+.tutoring-request-action .option-request-note {
     color: #56471f;
-    margin-top: -2px;
+    font-size: 1rem;
+    line-height: 1.55;
+    margin: 0 auto 14px;
+    max-width: 520px;
+    text-align: center;
 }
 
 .option-portal-link {
@@ -1151,22 +1264,37 @@ header {
 }
 
 .tutoring-request-content {
-    padding: 58px 0 74px;
+    padding: 34px 0 74px;
 }
 
 .tutoring-request-back-link {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.74);
+    border: 1px solid rgba(91, 128, 158, 0.52);
+    border-radius: 999px;
+    box-shadow: 0 7px 18px rgba(23, 51, 78, 0.08);
     color: #254f73;
-    display: inline-block;
-    font-size: 0.94rem;
+    display: flex;
+    font-size: 0.86rem;
     font-weight: 700;
-    margin: 0 0 22px;
+    margin: 20px auto 0;
+    padding: 8px 14px;
     text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    width: fit-content;
 }
 
 .tutoring-request-back-link:hover,
 .tutoring-request-back-link:focus-visible {
-    text-decoration: underline;
-    text-underline-offset: 4px;
+    background: #fff;
+    border-color: rgba(60, 105, 139, 0.72);
+    box-shadow: 0 9px 22px rgba(23, 51, 78, 0.12);
+    transform: translateY(-1px);
+}
+
+.tutoring-request-back-link:focus-visible {
+    outline: 3px solid rgba(72, 120, 156, 0.28);
+    outline-offset: 3px;
 }
 
 .tutoring-request-card {
@@ -1192,10 +1320,13 @@ header {
 }
 
 .tutoring-request-introduction {
-    background: linear-gradient(135deg, rgba(220, 235, 244, 0.78), rgba(238, 246, 249, 0.88));
-    border-left: 4px solid #517b9c;
+    background: rgba(226, 239, 246, 0.86);
+    border: 1px solid rgba(72, 116, 150, 0.76);
     border-radius: 10px;
-    color: #21445f;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.62);
+    color: #17364d;
+    font-size: 1.02rem;
+    font-weight: 500;
     margin-bottom: 30px;
     padding: 18px 20px;
 }
