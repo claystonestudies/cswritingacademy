@@ -358,41 +358,37 @@
         width: 28px;
     }
 
-    .tutoring-booking-panel {
-        border-radius: 14px;
-        margin: 34px 0 44px;
-        padding: 28px 18px 22px;
-    }
-
     .tutoring-booking-area {
-        gap: 14px;
-        margin: 28px 0 40px;
-    }
-
-    .tutoring-booking-intro {
-        padding: 17px 18px;
-    }
-
-    .tutoring-booking-intro p {
-        font-size: 0.98rem;
-        line-height: 1.6;
-    }
-
-    .tutoring-booking-area .tutoring-booking-panel {
-        margin: 0;
-        padding: 24px 16px 18px;
+        gap: 18px;
+        margin: 34px 0 10px;
     }
 
     .tutoring-booking-area .option-card {
-        padding: 21px 18px 18px;
+        min-height: 0;
+        padding: 24px 18px 20px;
     }
 
     .tutoring-booking-panel > h2 {
         font-size: 1.7rem;
     }
 
-    .tutoring-booking-panel > h2::after {
-        width: 58%;
+    .tutoring-booking-process {
+        font-size: 1.02rem;
+        line-height: 1.55;
+        padding: 0 8px;
+    }
+
+    .tutoring-request-row {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 14px;
+        padding: 20px 2px 0;
+        text-align: center;
+    }
+
+    .tutoring-request-link {
+        min-height: 46px;
+        width: 100%;
     }
 
     .tutoring-request-content {
