@@ -1067,6 +1067,28 @@ header {
     z-index: 1;
 }
 
+.option-price {
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.85rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: -10px 0 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.option-booking-note,
+.option-request-note {
+    color: #36506a;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    margin: 0 auto 22px;
+    max-width: 260px;
+    position: relative;
+    z-index: 1;
+}
+
 .option-card--single {
     --portal-border: rgba(32, 70, 49, 0.9);
     --portal-card-border: rgba(46, 91, 65, 0.72);
@@ -1092,6 +1114,11 @@ header {
     --portal-glow: rgba(112, 87, 31, 0.2);
     --portal-start: #665226;
     --portal-text: #fffdf5;
+}
+
+.option-card--weekly .option-request-note {
+    color: #56471f;
+    margin-top: -2px;
 }
 
 .option-portal-link {
@@ -1121,6 +1148,146 @@ header {
     transition: box-shadow 0.2s ease, filter 0.2s ease, transform 0.2s ease;
     width: 100%;
     z-index: 1;
+}
+
+.tutoring-request-content {
+    padding: 58px 0 74px;
+}
+
+.tutoring-request-back-link {
+    color: #254f73;
+    display: inline-block;
+    font-size: 0.94rem;
+    font-weight: 700;
+    margin: 0 0 22px;
+    text-decoration: none;
+}
+
+.tutoring-request-back-link:hover,
+.tutoring-request-back-link:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.tutoring-request-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.97), rgba(237, 245, 250, 0.93));
+    border: 1px solid rgba(112, 151, 183, 0.58);
+    border-radius: 20px;
+    box-shadow: 0 26px 55px rgba(23, 51, 78, 0.13), inset 0 1px 0 rgba(255, 255, 255, 0.94);
+    margin: 0 auto;
+    max-width: 860px;
+    overflow: hidden;
+    padding: 38px;
+    position: relative;
+}
+
+.tutoring-request-card::before {
+    background: linear-gradient(90deg, transparent, #426e95, transparent);
+    content: "";
+    height: 3px;
+    left: 12%;
+    position: absolute;
+    right: 12%;
+    top: 0;
+}
+
+.tutoring-request-introduction {
+    background: linear-gradient(135deg, rgba(220, 235, 244, 0.78), rgba(238, 246, 249, 0.88));
+    border-left: 4px solid #517b9c;
+    border-radius: 10px;
+    color: #21445f;
+    margin-bottom: 30px;
+    padding: 18px 20px;
+}
+
+.tutoring-request-introduction p,
+.tutoring-request-next-steps {
+    line-height: 1.65;
+    margin: 0;
+}
+
+.tutoring-request-questions {
+    counter-reset: request-question;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tutoring-request-questions li {
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(115, 150, 177, 0.3);
+    display: flex;
+    gap: 16px;
+    padding: 20px 0;
+}
+
+.tutoring-request-questions li:last-child {
+    border-bottom: 0;
+}
+
+.tutoring-request-questions span {
+    align-items: center;
+    background: #315f82;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-flex;
+    flex: 0 0 29px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    height: 29px;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+.tutoring-request-questions p {
+    color: #1f3c55;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.tutoring-request-next-steps {
+    background: rgba(244, 236, 211, 0.61);
+    border: 1px solid rgba(162, 132, 67, 0.42);
+    border-radius: 10px;
+    color: #493b1c;
+    margin: 28px 0;
+    padding: 17px 20px;
+}
+
+.tutoring-request-email-panel {
+    border-top: 1px solid rgba(112, 151, 183, 0.42);
+    padding-top: 28px;
+    text-align: center;
+}
+
+.tutoring-request-email-label {
+    color: #36556c;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    margin: 0 0 12px;
+    text-transform: uppercase;
+}
+
+.tutoring-request-email-copy {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tutoring-request-email-address {
+    background: #fff;
+    border: 1px solid rgba(88, 129, 161, 0.68);
+    border-radius: 8px;
+    color: #1c425f;
+    font-size: 0.96rem;
+    min-width: 290px;
+    padding: 12px 14px;
+}
+
+.tutoring-request-email-copy .contact-copy-button {
+    flex: 0 0 auto;
 }
 
 .option-portal-link:hover {

@@ -372,6 +372,41 @@
         width: 58%;
     }
 
+    .tutoring-request-content {
+        padding: 38px 0 54px;
+    }
+
+    .tutoring-request-card {
+        border-radius: 14px;
+        padding: 26px 20px;
+    }
+
+    .tutoring-request-introduction,
+    .tutoring-request-next-steps {
+        padding: 16px;
+    }
+
+    .tutoring-request-questions li {
+        gap: 12px;
+        padding: 18px 0;
+    }
+
+    .tutoring-request-email-copy {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .tutoring-request-email-address {
+        min-width: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .tutoring-request-email-copy .contact-copy-button {
+        min-height: 46px;
+        width: 100%;
+    }
+
     .book-theme-grid {
         grid-template-columns: 1fr;
     }

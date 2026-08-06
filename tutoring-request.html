@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Send a tutoring request to Claystone Studies Writing Academy to discuss writing goals, interests, and scheduling needs.">
+    <title>Tutoring Request | Claystone Studies Writing Academy</title>
+    <link rel="stylesheet" href="css/styles.css?v=20260806-1">
+    <link rel="stylesheet" href="css/responsive.css?v=20260806-1">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Claystone Studies Logo" class="logo-img">
+                </a>
+                <span class="brand-name">Claystone Studies Writing Academy</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="book.html">Book</a></li>
+                <li><a href="writing-approach.html">Writing Approach</a></li>
+                <li><a href="tutoring.html" class="active">Tutoring</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header tutoring-request-header">
+            <div class="container">
+                <h1>Tutoring Request</h1>
+                <p>Share a little about what you are looking for before booking a session.</p>
+            </div>
+        </section>
+
+        <section class="tutoring-request-content">
+            <div class="container">
+                <a href="tutoring.html#booking-title" class="tutoring-request-back-link">&#8592; Back to Tutoring</a>
+
+                <article class="tutoring-request-card">
+                    <div class="tutoring-request-introduction">
+                        <p>Please address the points below in an email to Robert. You may write briefly or in detail, whichever is most useful.</p>
+                    </div>
+
+                    <ol class="tutoring-request-questions">
+                        <li>
+                            <span>1</span>
+                            <p>What kind of writing, reading, critical-thinking, speech, or debate support are you looking for?</p>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <p>What would you like to accomplish through tutoring?</p>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <p>How often would you be interested in meeting, and what days or times generally work for you?</p>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <p>Please include any context that may be useful: starting points, educational background, current work, interests, strengths, or challenges. If the request concerns a student, you may also include their grade level.</p>
+                        </li>
+                    </ol>
+
+                    <p class="tutoring-request-next-steps">Robert reviews tutoring requests for fit and availability. If the tutoring is appropriate and a time is available, he will reply with next steps and booking instructions.</p>
+
+                    <div class="tutoring-request-email-panel" aria-labelledby="tutoring-request-email-heading">
+                        <p class="tutoring-request-email-label" id="tutoring-request-email-heading">Send your tutoring request to</p>
+                        <div class="tutoring-request-email-copy">
+                            <input class="tutoring-request-email-address" type="text" value="robert@claystonestudies.com" readonly aria-label="Robert's email address">
+                            <button class="contact-copy-button" type="button" data-email="robert@claystonestudies.com">Copy Email</button>
+                        </div>
+                        <p class="contact-copy-status" aria-live="polite"></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Claystone Studies LLC. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
