@@ -8,10 +8,17 @@
 
 @media (max-width: 920px) {
     .brand-name {
-        font-size: 1.05rem;
         line-height: 1.2;
         max-width: calc(100vw - 132px);
         white-space: normal;
+    }
+
+    .brand-primary {
+        font-size: 1.08rem;
+    }
+
+    .brand-secondary {
+        font-size: 0.82rem;
     }
 
     .navbar {
@@ -171,8 +178,16 @@
     }
 
     .brand-name {
-        font-size: 0.95rem;
+        gap: 0.34em;
         max-width: calc(100vw - 118px);
+    }
+
+    .brand-primary {
+        font-size: 0.98rem;
+    }
+
+    .brand-secondary {
+        font-size: 0.75rem;
     }
 
     .hero h1 {
